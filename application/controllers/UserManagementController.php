@@ -771,7 +771,7 @@ class UserManagementController extends LSBaseController
     {
         if (
             !(Permission::model()->hasGlobalPermission('users', 'update') &&
-            Permission::model()->hasGlobalPermission('templates', 'update'))
+            Permission::model()->hasGlobalPermission('themes', 'update'))
         ) {
             return $this->renderPartial(
                 'partial/error',

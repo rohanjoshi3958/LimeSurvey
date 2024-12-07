@@ -665,9 +665,9 @@ class User extends LSActiveRecord
                                 && $this->uid != App()->user->getId() // To update self : must use personal settings
         ];
         $dropdownItems[] = [
-            'title'            => gT('Template permissions'),
+            'title'            => gT('Theme permissions'),
             'iconClass'        => "ri-brush-fill",
-            'linkClass'        => "UserManagement--action--openmodal UserManagement--action--templatepermissions",
+            'linkClass'        => "UserManagement--action--openmodal UserManagement--action--themepermissions",
             'linkAttributes'   => [
                 'data-href' => $setTemplatePermissionsUrl,
             ],
